@@ -1,18 +1,14 @@
 {% set name = "Kuyruk" %}
-{% set version = "5.0.4" %}
-{% set sha256 = "b98dd361d81a0308315fbbfb78ac6a7f79a132aeb08f76febb87f1e428d3dd4b" %}
+{% set version = "5.1.2" %}
+{% set sha256 = "8eda76f78a84e164577a18b9e10d25dfcc85fcbbe114c217600f7a83b0a2b388" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  # TODO: Use PyPi releases starting with the next release:
-  # https://github.com/cenkalti/kuyruk/pull/46
-  #fn: {{ name }}-{{ version }}.tar.gz
-  #url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  fn: 3d312fd191b141ef3fdb0f9ecae3d52ffa0ec160.zip
-  url: https://github.com/cenkalti/kuyruk/archive/3d312fd191b141ef3fdb0f9ecae3d52ffa0ec160.zip
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
