@@ -41,7 +41,6 @@ conda search kuyruk --channel conda-forge
 ```
 
 
-
 About conda-forge
 =================
 
