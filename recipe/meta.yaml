@@ -1,6 +1,6 @@
 {% set name = "Kuyruk" %}
-{% set version = "7.0.1" %}
-{% set sha256 = "cf99407cc6d2cafb379528039a26d0d59586bc3724377064a9c713bca40882d8" %}
+{% set version = "8.1.1" %}
+{% set sha256 = "7a9993aecc37e5ee8a9c6e800afb1ebff87f6d8140f1beceadba0404b4bd6d1e" %}
 
 package:
   name: {{ name|lower }}
