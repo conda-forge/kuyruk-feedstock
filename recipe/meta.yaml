@@ -1,6 +1,6 @@
 {% set name = "Kuyruk" %}
-{% set version = "8.2.0" %}
-{% set sha256 = "51e9238b7452c4acfaf3851d03316161756a14f1726764993d268b978fe84c54" %}
+{% set version = "8.4.0" %}
+{% set sha256 = "0a8c315bc9728567f3d4a146c0216f8af643f21522db2bbfc90a9aeef0c13777" %}
 
 package:
   name: {{ name|lower }}
@@ -26,6 +26,7 @@ requirements:
     # setuptools is required as a run dependency:
     # https://github.com/cenkalti/kuyruk/pull/45
     - setuptools
+    - six >=1.10.0
     - amqp >=1.4.6
     - setproctitle >=1.1.8
     - blinker >=1.3
