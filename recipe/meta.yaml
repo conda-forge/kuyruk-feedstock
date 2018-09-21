@@ -14,11 +14,13 @@ source:
 build:
   number: 0
   skip: true  # [py27]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - kuyruk = kuyruk.__main__:main
 
 requirements:
+  host:
+    - pip
   build:
     - python
     - setuptools
