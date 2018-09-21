@@ -19,11 +19,10 @@ build:
     - kuyruk = kuyruk.__main__:main
 
 requirements:
-  host:
-    - pip
   build:
     - python
-    - setuptools
+  host:
+    - pip
   run:
     - python
     # setuptools is required as a run dependency:
