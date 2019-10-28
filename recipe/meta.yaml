@@ -1,6 +1,6 @@
 {% set name = "Kuyruk" %}
-{% set version = "9.1.0" %}
-{% set sha256 = "72d8e939c1cf7ecb32a1e864eb494cf50ac98e47e2e6ccbf50b34cda78343d6a" %}
+{% set version = "9.2.0" %}
+{% set sha256 = "6140807e332fb65fec3df1de53bd865095140398fa666825831508d282dc5556" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   skip: true  # [py27]
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
