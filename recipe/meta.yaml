@@ -1,6 +1,6 @@
 {% set name = "Kuyruk" %}
-{% set version = "9.3.0" %}
-{% set sha256 = "0bd1466b753b4e8737108b1afb1da4a89bbca40227ff93817a9c42155e4a3a29" %}
+{% set version = "9.4.0" %}
+{% set sha256 = "49a69502d87ecadea34176c72287b7a92855c9be84cabbcbf4ae48a4f9d2c0a6" %}
 
 package:
   name: {{ name|lower }}
@@ -43,7 +43,7 @@ about:
   home: https://github.com/cenkalti/kuyruk
   license: MIT
   license_file: LICENSE
-  summary: 'Simple task queue for Python'
+  summary: Simple task queue for Python
   description: |
     Kuyruk is a simple and easy way of distributing tasks to run on servers.
     It uses RabbitMQ as message broker and depends on amqp which is a
