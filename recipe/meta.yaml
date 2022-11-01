@@ -1,19 +1,16 @@
 {% set name = "Kuyruk" %}
 {% set version = "9.4.0" %}
-{% set sha256 = "49a69502d87ecadea34176c72287b7a92855c9be84cabbcbf4ae48a4f9d2c0a6" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 49a69502d87ecadea34176c72287b7a92855c9be84cabbcbf4ae48a4f9d2c0a6
 
 build:
-  number: 4
-  skip: true  # [py27]
+  number: 5
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - kuyruk = kuyruk.__main__:main
