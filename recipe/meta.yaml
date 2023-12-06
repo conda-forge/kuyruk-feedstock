@@ -1,5 +1,5 @@
 {% set name = "Kuyruk" %}
-{% set version = "10.0.0" %}
+{% set version = "10.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac197f55e9f2fbfe4c07db1f91d007c4db47b920ea8e0f2907e71ffb0e07827a
+  sha256: 112574e8862ce3fe2d62744e3667130faffb7a999be85570daaccfd9dc83cfec
 
 build:
   number: 0
