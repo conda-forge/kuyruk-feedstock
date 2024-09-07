@@ -10,7 +10,7 @@ source:
   sha256: dfc78f11ab6a7ccc565f6504238ebafedb86ab556ef97bcc706af711d46d5d68
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - kuyruk = kuyruk.__main__:main
