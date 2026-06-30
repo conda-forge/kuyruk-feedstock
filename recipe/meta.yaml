@@ -1,5 +1,5 @@
 {% set name = "Kuyruk" %}
-{% set version = "10.2.1" %}
+{% set version = "10.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
-  sha256: 68e0750b5184f128e8dadfccb9c9d18e5bcfb4b890971f2f7f6e935b7200a4ab
+  sha256: bd6fafb119abea4fa912e6ff72607cf2a811f875a69a9a24512cda5cc301304d
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - kuyruk = kuyruk.__main__:main
