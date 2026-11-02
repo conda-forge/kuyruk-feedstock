@@ -1,13 +1,13 @@
 {% set name = "Kuyruk" %}
-{% set version = "10.2.2" %}
+{% set version = "10.2.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
-  sha256: bd6fafb119abea4fa912e6ff72607cf2a811f875a69a9a24512cda5cc301304d
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
+  sha256: 6ea3d9c48b90a226cfb0c59a31c9cadfd9c9b56f01c85d983f8aa91d6b19f1c8
 
 build:
   number: 0
